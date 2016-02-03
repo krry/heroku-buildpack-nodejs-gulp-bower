@@ -79,7 +79,7 @@ fi
 (
   if [ -f $build_dir/bower.json ]; then
     # Install bower locally
-    npm install bower
+    npm install bower -g
     status "-----> Found bower.json, running bower install"
     $build_dir/node_modules/.bin/bower install
   else
